@@ -1,11 +1,15 @@
 import React from 'react';
 import UserList from './components/UserList';
 import UserForm from './components/UserForm';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import NavigationBar from './components/navigationBar';
+import { useAuth } from './contexts/authContext';
 
 // Wrap your entire application with the Router component
 function App() {
+
+  //const { isLoggedIn, logout } = useAuth();
+
   return (
     <Router>
       <div className="App">

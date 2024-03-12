@@ -11,7 +11,7 @@ function NavigationBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <NavDropdown title="Menu" id="basic-nav-dropdown" class= "float-right">
               <NavDropdown.Item href="/home">Home</NavDropdown.Item>
               <NavDropdown.Item href="/users">Users</NavDropdown.Item>
               <NavDropdown.Divider />
