@@ -1,4 +1,4 @@
-/* Basic styles */
+/* Basic styles
 body {
     font-family: sans-serif;
     margin: 0;
@@ -57,4 +57,20 @@ table {
 .dropdown-btn{
     float: right;
     display: block;
+}
+.dropdown-container {
+  position: relative; /* Make container relative for positioning */
+}
+
+.dropdown-content {
+  position: absolute; /* Make dropdown content absolute */
+  top: 0; /* Position at top of container */
+  left: 0; /* Position at left of container */
+  width: 100%; /* Span full width of container */
+  height: 100%; /* Span full height of container */
+  background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent background */
+  display: flex; /* Allow vertical stacking of links */
+  flex-direction: column; /* Stack links vertically */
+  z-index: 10; /* Ensure content appears above other elements */
+  /* Add any additional styling for borders, padding, etc. */
 }

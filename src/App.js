@@ -1,9 +1,8 @@
 import React from 'react';
-import Header from './components/Header';
 import UserList from './components/UserList';
 import UserForm from './components/UserForm';
-import AccordionMenu  from './components/AccordionMenu';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import NavigationBar from './components/navigationBar';
 
 // Wrap your entire application with the Router component
 function App() {
@@ -11,9 +10,7 @@ function App() {
     <Router>
       <div className="App">
         <div className="container">
-          <div className="row">
-                <Header />
-          </div>
+        <NavigationBar/>
           <Routes>
             <Route path="/" element={<></>} /> {/* Blank page for root URL */}
             <Route path="/users" element={<UserList />} />
