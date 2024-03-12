@@ -1,0 +1,60 @@
+/* Basic styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  /* Header and menu row */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Header styles */
+.header {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  /* Accordion menu styles */
+.accordion .btn-primary {
+    border-color: #f5f5f5;
+  }
+  
+.collapse {
+    border: none;
+  }
+  
+.collapse .card-body {
+    padding: 0.5rem;
+  }
+
+  /* User list styles (optional) */
+table {
+    width: 100%;
+  }
+  
+  th,
+  td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+.dropdown-item{
+    text-align: right;
+ }
+
+.dropdown-btn{
+    float: right;
+    display: block;
+}

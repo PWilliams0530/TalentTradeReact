@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+  display: grid; /* Use grid layout for precise positioning */
+  grid-template-columns: 1fr 2fr; /* Define grid columns: left (1fr) and right (2fr) */
+  height: 100vh; /* Set App to take up 100% viewport height */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.header {
+  grid-column: span 2; /* Header spans both columns */
+  background-color: #f0f0f0; /* Optional background color for header */
+  padding: 1rem; /* Optional padding for header content */
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+.table-container {
+  flex: 2; /* Makes the table container take up 2/3 of the space */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
